@@ -11,15 +11,7 @@
 |
 */
 
-Route::get('/', 'MainController@index');
-Route::get('zohoverify/verifyforzoho.html', 'WelcomeController@getZoho');
-
 Route::get('home', 'HomeController@index');
-Route::post('apply', 'MainController@postApply');
-Route::post('contact', 'MainController@postContact');
-Route::get('uploads', 'MainController@getUploads');
-Route::get('add-news', 'MainController@getAddNews');
-Route::post('add-news', 'MainController@postAddNews');
-Route::get('blog/{title?}', 'MainController@getBlog');
-Route::post('add-comment', 'MainController@postComment');
-Route::get('about', 'MainController@getAbout');
+Route::get('/', 'FigureController@index');
+Route::get('7figures', 'FigureController@index');
+Route::get('disenado-logos', 'FigureController@getDisenadoLogos');
